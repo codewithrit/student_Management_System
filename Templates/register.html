@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Ragiser</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body class="bg-nav mt-100">
+       <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 > </h1>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <form class="form" method="post" , action="add_user">
+                    <div class="mb-3">
+                        <label for="uname" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="uname" name="uname" required>
+                
+                        <div class="mb-3">
+                            <label for="uemail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="uemail" name="uemail" required>
+                          </div>
+                    <label for="upassword" class="form-label">Password</label><br>
+                    <input type = "password" class="form-control" id="upassword" name="upassword" required>
+                    <br><br>
+                    <input type = "submit" class="btn btn-primary btn-block btn-lg" value="Ragiser"><br><br>
+                    </form>
+                    <p class="mt-2">Already have an account? <a href="/" >Login</a></p>
+                    
+                </div>
+            </div>
+        
+        </div>
+       </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
